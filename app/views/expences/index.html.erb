@@ -1,0 +1,36 @@
+<h1>Expences for  <%= link_to @user.username, user_path(:username => @user.username)  %></h1>
+
+
+<table>
+  <tr>
+    <th>category</th>
+    <th>body</th>
+    <th>currency</th>
+    <th>amount</th>
+    <th>tag</th>
+    <th>longditude</th>
+    <th>latitude</th>
+    <th>created_at</th>
+  </tr>
+
+<% @expences.each do |expence| %>
+  <tr>
+    <td><%=h expence.category %></td>
+    <td><%=h expence.body %></td>
+    <td><%=h expence.currency %></td>
+    <td><%=h expence.amount %></td>
+    <td><%=h expence.tag %></td>
+    <td><%=h expence.longditude %></td>
+    <td><%=h expence.latitude %></td>
+    <td><%=h expence.created_at %></td>
+    <td>show</td>
+    <td>edit</td>
+    <td>destroy</td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+<%= link_to 'New expence', new_expence_path %>

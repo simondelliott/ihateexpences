@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category: MyString
+  body: MyText
+  currency: MyString
+  amount: 9.99
+  tag: MyText
+  longditude: 9.99
+  latitude: 9.99
+
+two:
+  category: MyString
+  body: MyText
+  currency: MyString
+  amount: 9.99
+  tag: MyText
+  longditude: 9.99
+  latitude: 9.99

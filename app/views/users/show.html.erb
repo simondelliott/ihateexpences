@@ -1,0 +1,24 @@
+<h1>User show</h1>
+
+<p>
+  <b>username:</b>
+  <%=h @user.username %>
+</p>
+
+<p>
+  <b>password:</b>
+  <%=h @user.password %>
+</p>
+
+<p>
+  <b>password_hash:</b>
+  <%=h @user.password_hash %>
+</p>
+
+
+<a href="/users/<%= @user.username %>/expences">expences</a><br/>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', user_path %>
+
+

@@ -1,0 +1,7 @@
+class Expence < ActiveRecord::Base
+
+  validates_presence_of :type
+  validates_length_of :title, :minimum => 5
+
+
+end

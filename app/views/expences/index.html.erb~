@@ -1,0 +1,2 @@
+<h1>Expences index page</h1>
+<%= link_to 'New expence', new_expences_path %>
