@@ -1,0 +1,21 @@
+<h1>Home#login</h1>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+
+<% form_for :home, @login_user, :url => { :action => "authenticate" } do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+
+  <%= password_field "home", "password" %>
+
+  <p>
+    <%= f.submit "Login" %>
+  </p>
+<% end %>
